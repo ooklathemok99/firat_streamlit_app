@@ -25,7 +25,7 @@ import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response.json()) # just writes data to screen
 
-# write your own comment -what does the next line do? 
+# write your own comment -what does the next line do? MAKE THE JSON FORMAT INTO A TABLE FORMAT
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-# write your own comment - what does this do?
+# write your own comment - what does this do? SHOWS THE DATAFRAME AS A TABLE
 streamlit.dataframe(fruityvice_normalized)
