@@ -37,7 +37,7 @@ streamlit.dataframe(fruityvice_normalized)
 except URLerror as e:
 streamlit.error()
 
-streamlit.stop()
+# streamlit.stop()
 
 
 
